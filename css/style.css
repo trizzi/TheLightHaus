@@ -1,0 +1,217 @@
+:root {
+  --primary-color: #f4811f;
+  --light-color: #ffffff;
+  --dark-color: #000000;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'poppins', sans-serif;
+  line-height: 1.5;
+}
+
+/* utilities */
+a {
+  color: #000000;
+  text-decoration: none;
+}
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background: var(--dark-color);
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+}
+
+.btn-light {
+  background: var(--light-color);
+}
+
+.bg-dark {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+.container {
+  max-width: 1500px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.default {
+  color: var(--primary-color);
+}
+.decoration {
+  text-decoration: underline;
+}
+.l-headings {
+  font-size: 3rem;
+  margin: 2.5rem 0.5rem 0 0;
+  line-height: 1.1;
+}
+.lead {
+  font-size: 1rem;
+  margin: 2rem 0.5rem 3rem 0;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  width: 90%;
+  list-style-type: none;
+}
+
+.list li a {
+  text-decoration: none;
+}
+
+.py-1 {
+  padding: 2rem 0;
+}
+.py-2 {
+  padding: 3rem 3rem;
+}
+.py-3 {
+  padding: 0rem 3rem;
+}
+.py-4 {
+  padding-left: 2rem;
+}
+.py-5 {
+  padding-right: 2rem;
+}
+
+#navbar-top .container-background {
+  background: #000000;
+}
+#navbar-top .navbar-contents {
+  display: flex;
+  color: #f3f3f3;
+}
+
+#navbar-top .navbar-center {
+  background: #e5e5e5;
+}
+
+#navbar-top .navbar-center .navbar-center-contents {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 0.5px solid #828282;
+}
+
+#navbar-top .navbar-center .navbar-center-contents .img-logo {
+  padding: 0;
+}
+
+#navbar-top .navbar-center .navbar-center-contents .search-bar {
+  margin-top: 1rem;
+}
+
+#navbar-top .navbar-center .navbar-center-contents .search-bar input {
+  width: 20rem;
+  height: 30px;
+}
+
+#navbar-top .navbar-center .navbar-center-contents ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 1rem;
+}
+
+#navbar-top .navbar-center .navbar-center-contents ul li a {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#navbar-top .navbar-end {
+  background: #e5e5e5;
+}
+
+#navbar-top .navbar-end .navbar-end-contents {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+#showcase {
+  background: url('../img/Rectangle\ 7.png') no-repeat center center/cover;
+  height: 100vh;
+  color: #000;
+}
+
+#showcase .showcase-container {
+  background: url('../img/Rectangle\ 23.png') no-repeat center;
+  position: absolute;
+  margin-top: 15%;
+  width: 30%;
+  height: 50%;
+}
+
+#showcase .showcase-container .showcase-content {
+  margin-top: 7rem;
+  margin-left: 5rem;
+}
+
+.page-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  margin: 2rem 0;
+  /* grid-gap: 1.5rem; */
+}
+.purity {
+  display: flex;
+  flex-wrap: wrap;
+}
+.purity .items {
+  margin: 0 1rem;
+}
+
+.card {
+  background: #f2f2f2;
+  padding: 1rem;
+}
+
+#main-footer {
+  background: #333333;
+  color: #fff;
+}
+
+#main-footer img {
+  width: 150px;
+}
+
+#main-footer a {
+  color: #fff;
+}
+
+#main-footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+}
+
+#main-footer .footer-container > *:last-child {
+  background: #444;
+  grid-column: 1 / span 4;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+#main-footer .footer-container input[type='email'] {
+  width: 90%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#main-footer .footer-container input[type='submit'] {
+  width: 90%;
+}
