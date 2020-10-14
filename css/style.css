@@ -160,6 +160,35 @@ a {
   margin-left: 5rem;
 }
 
+/* Container needed to position the button. Adjust the width as needed */
+/* #home-articles .image-container {
+  position: relative;
+  width: 50%;
+} */
+
+/* Make the image responsive */
+/* #home-articles .image-container img {
+  width: 50%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+/* #home-articles .image-container.button {
+  position: absolute;
+  top: 20%;
+  right: 50%; */
+/* transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); */
+/* padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+} */
+
+#home-articles .image-container1 {
+  position: relative;
+}
+
 .page-container {
   display: grid;
   grid-template-columns: 5fr 2fr;
