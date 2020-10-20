@@ -34,11 +34,11 @@
         
       </div>
       <!-- Second Layer -->
-      <div class="navbar-center">
+      <div class="navbar-center border">
         <div class="container">
           <div class="navbar-center-contents">
             <div class="img-logo">
-              <img src="img/Stroke 79.png" class="py-4" />
+              <img src="img/Stroke 79.png"  />
   
               <div class="topnav-right-content">
                 <img src="img/Fill 98.png" class="img-2" />
@@ -65,24 +65,38 @@
                 <li>
                   <i class="fas fa-shopping-cart "></i><a class="">Cart</a>
                 </li>
-              </ul>
-              <!-- <div class="topnav-right-content">
-                <i class="fas fa-user "></i><a>My Account</a>
-              </div>
-              <div class="topnav-right-content">
-                <i class="fas fa-user  "></i><a class="">List</a>
-              </div>
-              <div class="topnav-right-content">
-                <i class="fas fa-shopping-cart "></i><a class="">Cart</a>
-              </div> -->
-             
-              
+              </ul> 
             </div>
         </div>
         </div>
       </div>
 
       <!-- Third Layer -->
+
+
+      <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li>Lighting Explorer</li>
+                <li>Office</li>
+                <li>Hotel</li>
+                <li>Home</li>
+                <li>All Products</li>
+                <li>Pendant Light</li>
+                <li>Chandeliers</li>
+                <li>Switches & Sockets</li>
+                <li>Ceiling Lamps</li>
+                <li>Wall Lamps</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="navbar-end">
         <div class="container">
           <ul class="navbar-end-contents">
@@ -108,10 +122,11 @@
       <div class="container">
         <div class="showcase-container">
           <div class="showcase-content">
-            <h1 class="l-heading">Explore Our Showroom</h1>
+            <h2 class="l-heading">Explore Our Showroom</h2>
             <p class="lead">
               Not sure what you are looking for? No worries, use our
-              <span class="default">Lighting Xplorer</span> to see what you can get.
+              <span class="default italic"><em>Lighting Xplorer</em>
+                </span> to see what you can get.
             </p>
             <a href="#" class="btn btn-dark btn-block"
               >Proceed To Lighting Xplorer <i class="fas fa-arrow-right default"></i
@@ -129,9 +144,13 @@
     <!-- section 1 -->
     <section id="home-articles" class="py-1">
       <div class="container">
-        <h2>Shop By Space</h2>
-        <a href="#" class="default decoration">View All</a>
+        <div class="contents">
+        <div class="heading">
+          <h2>Shop By Space</h2>
+          <a href="#" class="default decoration">View All</a>
+        </div>
         <p>Select the type of apartment you want to light up</p>
+        </div>
         <div class="image-container">
           <div class="image-container1">
             <img src="img/Rectangle 12 (2).png" />
@@ -146,18 +165,25 @@
             <div class="child"><button class="btn btn-light btn-block default">Hotel</button></div>
           </div>
         </div>
-      </div>git
+      </div>
     </section>
     <!-- End of section 1 -->
 
     <!-- Section 2 -->
     <section id="section-articles" class="py-1">
       <div class="container">
-        <h2>Popular categories</h2>
-        <a href="#" class="default">View All</a>
+        <div class="heading">
+          <h2>Popular Categories</h2>
+          <a href="#" class="default decoration">View All</a>
+        </div>
         <div class="images">
-          <img src="img/Rectangle 12.png" />
-          <img src="img/Rectangle 12 (3).png" />
+          <div class="image-container1">
+            <img src="img/Rectangle 12.png" />
+            <div class="child"><button class="btn btn-light btn-block default">Ceiling Lamps</button></div>
+          </div> <div class="image-container1">
+            <img src="img/Rectangle 12 (3).png" />
+            <div class="child"><button class="btn btn-light btn-block default">Chandeliers</button></div>
+          </div>
         </div>
       </div>
     </section>
@@ -170,18 +196,30 @@
         <a href="#">View All</a>
         <div class="purity">
      
-        <div class="items">
-          <img src="img/46.png" />
+         
+
+          <!-- <img src="img/46.png" />
           <p>Standing Lamp</p>
-          <p>N45,000</p>
-        </div>
+          <p>N45,000</p> -->
+          <div class="items">
+            <img src="img/46.png" />
+            <p>Standing Lamp</p>
+            <p>N45,000</p>
+          </div>
+      
+          <div class="items">
+            <div class="image-container1">
+                <img src="img/Rectangle 44.png" />
+                <div class="child"><button class="btn btn-dark btn-block">
+                  10% OFF</button>
+                </div>
+               <p class="spacing">Wooden Chandeliers</p>
+               <p class="spacing">N45,000</p>
+            </div>
+          </div>
+
         <div class="items">
           <img src="img/45.png" />
-          <p>Wooden Chandelier</p>
-          <p>N45,000</p>
-        </div>
-        <div class="items">
-          <img src="img/Rectangle 44.png" />
           <p>Pendant Lamp</p>
           <p>N15,000</p>
         </div>
@@ -205,14 +243,20 @@
             <p>N45,000</p>
           </div>
           <div class="items">
-            <img src="img/Rectangle 44.png" />
+            <img src="img/45.png" />
             <p>Pendant Lamp</p>
             <p>N15,000</p>
           </div>
-          <div class="items">
-            <img src="img/45.png" />
-            <p>Wooden Chandelier</p>
-            <p>N45,000</p>
+
+           <div class="items">
+            <div class="image-container1">
+                <img src="img/Rectangle 44.png" />
+                <div class="child"><button class="btn btn-dark btn-block">
+                  10% OFF</button>
+                </div>
+               <p>Wooden Chandeliers</p>
+               <p>N45,000</p>
+            </div>
           </div>
          
         </div>
@@ -233,13 +277,20 @@
             <p>Standing Lamp</p>
             <p>N45,000</p>
           </div>
+
+           <div class="items">
+            <div class="image-container1">
+                <img src="img/Rectangle 44.png" />
+                <div class="child"><button class="btn btn-dark btn-block">
+                  10% OFF</button>
+                </div>
+               <p class="spacing">Wooden Chandeliers</p>
+               <p>N45,000</p>
+            </div>
+          </div>
+
           <div class="items">
             <img src="img/45.png" />
-            <p>Wooden Chandelier</p>
-            <p>N45,000</p>
-          </div>
-          <div class="items">
-            <img src="img/Rectangle 44.png" />
             <p>Pendant Lamp</p>
             <p>N15,000</p>
           </div>
@@ -259,15 +310,22 @@
             <p>N45,000</p>
           </div>
           <div class="items">
-            <img src="img/Rectangle 44.png" />
+            <img src="img/45.png" />
             <p>Pendant Lamp</p>
             <p>N15,000</p>
           </div>
+
           <div class="items">
-            <img src="img/45.png" />
-            <p>Wooden Chandelier</p>
-            <p>N45,000</p>
+            <div class="image-container1">
+                <img src="img/Rectangle 44.png" />
+                <div class="child"><button class="btn btn-dark btn-block">
+                  10% OFF</button>
+                </div>
+               <p>Wooden Chandeliers</p>
+               <p>N45,000</p>
+            </div>
           </div>
+
         </div>
       </div>
     </section>

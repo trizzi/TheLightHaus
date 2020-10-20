@@ -2,6 +2,7 @@
   --primary-color: #f4811f;
   --light-color: #ffffff;
   --dark-color: #000000;
+  --overlay-color: rgba(24, 39, 51, 0.85);
 }
 * {
   margin: 0;
@@ -50,6 +51,12 @@ a {
 .decoration {
   text-decoration: underline;
 }
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+}
+
 .l-headings {
   font-size: 3rem;
   margin: 2.5rem 0.5rem 0 0;
@@ -86,6 +93,9 @@ a {
   padding-right: 2rem;
 }
 
+.spacing {
+  padding-bottom: 1rem;
+}
 #navbar-top .container-background {
   background: #000000;
 }
@@ -100,22 +110,28 @@ a {
 
 #navbar-top .navbar-center .navbar-center-contents {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 1rem 0;
   border-bottom: 0.5px solid #828282;
 }
 
 #navbar-top .navbar-center .navbar-center-contents .img-logo {
-  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-#navbar-top .navbar-center .navbar-center-contents .search-bar {
+/* #navbar-top .navbar-center .navbar-center-contents .search-bar {
   margin-top: 1rem;
-}
+} */
 
 #navbar-top .navbar-center .navbar-center-contents .search-bar input {
   width: 20rem;
   height: 30px;
+  background-image: url(../img/Vector.png);
+  background-position: 5px 5px;
+  background-repeat: no-repeat;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
 }
 
 #navbar-top .navbar-center .navbar-center-contents ul {
@@ -131,6 +147,9 @@ a {
   padding: 1rem;
 }
 
+.menu-wrap {
+  display: none;
+}
 #navbar-top .navbar-end {
   background: #e5e5e5;
 }
@@ -160,40 +179,51 @@ a {
   margin-left: 5rem;
 }
 
-/* Container needed to position the button. Adjust the width as needed */
-/* #home-articles .image-container {
+#home-articles .image-container {
+  display: flex;
+  flex-direction: row;
+}
+#home-articles .image-container1 img {
+  padding: 1rem;
+}
+#home-articles .image-container1 .child button {
   position: relative;
-  width: 50%;
-} */
-
-/* Make the image responsive */
-/* #home-articles .image-container img {
-  width: 50%;
-  height: auto;
+  left: 3rem;
+  top: -6rem;
+  z-index: 3;
 }
 
-/* Style the button and place it in the middle of the container/image */
-/* #home-articles .image-container.button {
-  position: absolute;
-  top: 20%;
-  right: 50%; */
-/* transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%); */
-/* padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-} */
-
-#home-articles .image-container1 {
-  position: relative;
+#section-articles .images {
+  display: flex;
+  flex-direction: row;
 }
+
+#section-articles .image-container1 img {
+  padding: 1rem 0 1rem 1rem;
+}
+
+#section-articles .image-container1 .child button {
+  position: relative;
+  left: 3rem;
+  top: -6rem;
+  z-index: 3;
+}
+
+#section-articless .image-container1 .child button {
+  position: relative;
+  left: 0rem;
+  top: -17rem;
+  z-index: 3;
+}
+/* 
+#section-articless .image-container1 {
+  padding: 1rem;
+} */
 
 .page-container {
   display: grid;
   grid-template-columns: 5fr 2fr;
   margin: 2rem 0;
-  /* grid-gap: 1.5rem; */
 }
 .purity {
   display: flex;
@@ -206,6 +236,23 @@ a {
 .card {
   background: #f2f2f2;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card p {
+  margin-bottom: 1rem;
+}
+
+.card input {
+  border: none;
+  background: #f2f2f2;
+  padding: 0 3rem;
+  border-bottom: 0.5px solid #828282;
+}
+
+.card a {
+  margin-top: 2rem;
 }
 
 #main-footer {
